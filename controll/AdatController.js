@@ -7,11 +7,20 @@ class AdatController {
     constructor() {
         console.log("Controller Const");
         this.dataService = new DataService();
-        this.dataService.getdata("../adat.json");   //ide kéne beírni azt a végpontot amit nem tudtunk előállítani
+        this.dataService.getdata("../adat.json", this.adatokMegj, this.hibaMegj);   //ide kéne beírni azt a végpontot amit nem tudtunk előállítani
+        //nem kell a gömbölyű zárójelk mert nem azonnal akarjuk megjeleníteni ez egy callback fgvény
         //new  AdatModell();
-        //new AdatView();
-       
+        //new AdatView();      
 
+    }
+
+    adatokMegj(lista){
+        console.log(lista);
+
+    }
+
+    hibaMegj(error){
+        console.log(error);
     }
 }
 export default AdatController;
