@@ -1,10 +1,14 @@
+import TablazatView from "./TablazatView.js";
+
 class AdatView {
-    #lista={};
+    #lista = {};
 
     constructor(lista, szuloElem) {
         this.#lista = lista;
+        this.szuloElem = szuloElem;
         console.log(this.#lista);
 
+        this.tablazatView = new TablazatView(this.#lista, this.szuloElem);
     }
 
 }
