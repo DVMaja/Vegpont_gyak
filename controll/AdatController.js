@@ -15,13 +15,13 @@ class AdatController {
 
     }
 
-    adatokMegj(lista){
+    adatokMegj(lista) {
         //console.log(lista);
         new AdatView(lista, $(".lista"));
 
     }
 
-    hibaMegj(error){        
+    hibaMegj(error) {
         new HibaView(error, $(".lista"));
     }
 }
