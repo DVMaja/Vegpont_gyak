@@ -1,6 +1,6 @@
 class TablazatSorView {
 
-    #adat = [];
+    #adat = {};
 
     constructor(adat, szuloElem) {
         this.#adat = adat;

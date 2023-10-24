@@ -1,7 +1,7 @@
 import TablazatSorView from "./TablazatSorView.js";
 
 class TablazatView {
-    #list = [];
+    #list = {};
 
     constructor(list, szuloElem) {
         //console.log("Látható a TablazatView");
