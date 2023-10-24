@@ -1,7 +1,9 @@
 class AdatView {
+    #lista={};
 
-    constructor() {
-        console.log("View Const");
+    constructor(lista, szuloElem) {
+        this.#lista = lista;
+        console.log(this.#lista);
 
     }
 
