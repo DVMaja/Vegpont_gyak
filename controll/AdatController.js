@@ -6,7 +6,7 @@ import HibaView from "../view/HibaView.js";
 class AdatController {
 
     constructor() {
-        console.log("Controller Const");
+        //console.log("Controller Const");
         this.dataService = new DataService();
         this.dataService.getdata("../adat.json", this.adatokMegj, this.hibaMegj);   //ide kéne beírni azt a végpontot amit nem tudtunk előállítani
         //nem kell a gömbölyű zárójelk mert nem azonnal akarjuk megjeleníteni ez egy callback fgvény

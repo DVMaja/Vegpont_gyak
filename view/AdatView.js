@@ -1,4 +1,4 @@
-import TablazatView from "./TablazatView.js";
+import TablazatView from "./tablazat/TablazatView.js";
 
 class AdatView {
     #lista = {};
